@@ -40,7 +40,6 @@ class ModulePatch extends ModuleFile {
         if (!this.exists){
             return null;
         } else if (!this._parsed){
-            console.log("sdgasd")
             if (this.encoding !== "utf8"){
                 throw new Error("Binary patches not supported yet")
             }
@@ -55,11 +54,9 @@ class ModulePatch extends ModuleFile {
      */
     get fileInfo(){
         if (!this.exists || !this.parsed){
-            console.log("haldo?")
             return null;
         } else if (!this._fileInfo){
             this._fileInfo = {};
-            console.log(this.parsed)
             if (!this.parsed.index){
                 this._fileInfo.relativePath = this.parsed.oldFileName;
             } else {
