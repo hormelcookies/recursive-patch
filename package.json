@@ -1,0 +1,18 @@
+{
+  "name": "recursive-patch",
+  "version": "0.1.0",
+  "description": "package to produce patches for two directories ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "diff": "^4.0.2",
+    "eol": "^0.9.1",
+    "fast-glob": "^3.2.4",
+    "fs-extra": "^9.0.1",
+    "istextorbinary": "^5.11.0"
+  }
+}
